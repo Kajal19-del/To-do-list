@@ -1,12 +1,35 @@
 import './index.css';
 
- function component() {
-   const element = document.createElement('div');
+const arrTodo = [
+  {
+    description: 'do homework',
+    completed: true,
+    index: 3,
+  },
+  {
+    description: 'clean house',
+    completed: true,
+    index: 1,
+  },
+  {
+    description: 'play soccer',
+    completed: false,
+    index: 2,
+  },
+];
 
-  // Lodash, now imported by this script
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+const todoList = document.getElementById('todoList');
 
-   return element;
- }
+arrTodo.sort((a, b) => a.index - b.index);
 
- document.body.appendChild(component());
+arrTodo.forEach((item) => {
+  todoList.innerHTML += `
+    <div class="todoFlex">
+      <div class="todoDiv">
+        <input type="checkbox" name="check" id="" ${item.completed ? 'checked' : ''} >
+        <p>${item.description}</p>
+      </div>
+      <i class="bi bi-three-dots-vertical"></i>
+    </div>
+  `;
+});
