@@ -74,16 +74,6 @@ The goal of this project to use plain JavaScript with objects. In this project, 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](N/A)
-
-## 🚀 Live Video <a name="live-video"></a>
-
-- [Live Video Link](N/A)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
