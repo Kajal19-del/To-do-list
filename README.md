@@ -1,121 +1,167 @@
-# To Do List
+<a name="readme-top"></a>
 
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
+Modify this file to match your project and remove sections that don't apply.
 
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-a simple HTML list of To Do tasks
+OPTIONAL SECTIONS:
+- FAQ
 
-# 🛠 Built With
-### Tech Stack:
-- HTML. 
-- CSS.
-- Javascript ES6.
+After you're finished please remove all the comments and instructions!
+-->
+
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <br/>
+
+  <h3><b>TO-DO-LIST README Template</b></h3>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+- [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [TO_DO_LIST] <a name="about-project"></a>
+The goal of this project to use plain JavaScript with objects. In this project, we build a basic website that allows users to add/remove books from a list. We achieved that by using JavaScript objects, arrays, dynamically modify the DOM and add some basic events.
+
+## 🛠 Built With <a name="built-with"></a>
+
 - Webpack
-- Webpack dev server 
-
-### Server:
-- local.
-### Database:
-- N/A.
-
-# Key Features:
-- HTML5 semantics.
-- CSS3.
-- Javascript, ES6.
-- Webpack and webpack dev server
-
-# 💻 Getting Started:
-### To get a local copy up and running, follow these steps:
-
-# Prerequisites:
-### In order to run this project you need:
-
- - A PC with window, linux and mac OS operating systems.
- 
- - Installed Git.
-
- - Have knowledge of Webpack, Git and GitHub.
-
- - An internet connection 
-
- - A browser such as chrome, Firefox and Internet explorer.
-
- - Have a code editor
-
-# Setup:
-Clone this repository to your desired folder:
+- HTML, CSS & JavaScript
+- Git, Github and Visual Studio Code
 
 
-- Clone this repository to your desired folder.
-- Run: git clone + 'link copied' and make sure the file is copied.
-- Open the file with a code edi
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Install:
-### Install this project with:
-- Git.
-- Github.
+<!-- Features -->
 
-# Usage:
-### To run the project, execute the following command:
-To run the project, execute the following command:
+### Key Features <a name="key-features"></a>
 
+> Describe between 1-3 key features of the application.
 
-- To run the project you need to make use of git commands such as git add , git pull and git command
+- **[I implement HTML5 semantics and CSS3]**
+- **[Javascript, ES6.]**
+- **[Webpack and webpack dev server]**
 
-# Run tests:
-### To run tests, run the following command:
- 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Download all the dependencies run:
-```
-npm install
-```
-Track HTML linter errors run:
-```
-npx hint .
-```
-Track CSS linter errors run:
-```
-npx stylelint "**/*.{css,scss}"
-```
-Track JavaScript linter errors run:
-```
-npx eslint .
-```
-To run the project:
+## 🚀 Live Demo <a name="live-demo"></a>
 
-```
-npm install --save-dev webpack-dev-server
+- [Live Demo Link](N/A)
 
-npm start
-```
+## 🚀 Live Video <a name="live-video"></a>
 
-# Deployment:
-### You can deploy this project using:
-- Github pages.
+- [Live Video Link](N/A)
 
-# 👥 Authors:
-### 👤 Johnie:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+To get a local copy up and running follow these simple example steps.
+
+- Choose a directory
+- Open a Terminal
+- write: git clone https://github.com/Kajal19-del/To-do-list.git
+- get into to directory "to-do-list"
+- write: npm install
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Kajal Pramanik**
+
 - GitHub: [@githubhandle](https://github.com/Kajal19-del)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kajal-pramanik-234a93173/)
 
-# 🔭 Future Features:
-- Use advanced JS data structures.
-- Implement some awesome animations and transitions to the design.
-- Integrate back-end.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# 🤝 Contributing:
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[I will upgrade with react framework]**
+- [ ] **[I will use Tailwind css in this project]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
 Contributions, issues, and feature requests are welcome!
-Feel free to check the issues page.
 
-# ⭐️ Show your support
-If you like this project kindly send to me an e-mail expressing it, it would make my day and fuel my motivation.
+Feel free to check the [issues page](https://github.com/Kajal19-del/To-do-list/issues).
 
-# 🙏 Acknowledgments:
-I would like to thank Microverse team for this journey.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> Write a message to encourage readers to support your project
+
+If you like this project give it a star...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
