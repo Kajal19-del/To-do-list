@@ -1,68 +1,35 @@
 import './index.css';
-import Task from '../modules/newTask.js';
-import addtask from '../modules/addTask.js';
-import removetask from '../modules/removeTask.js';
-import edittask from '../modules/editTask.js';
+
+const arrTodo = [
+  {
+    description: 'do homework',
+    completed: true,
+    index: 3,
+  },
+  {
+    description: 'clean house',
+    completed: true,
+    index: 1,
+  },
+  {
+    description: 'play soccer',
+    completed: false,
+    index: 2,
+  },
+];
 
 const todoList = document.getElementById('todoList');
 
-// displaying tasks on window loading
-window.addEventListener('DOMContentLoaded', () => {
-  const tasks = JSON.parse(localStorage.getItem('tasks'));
+arrTodo.sort((a, b) => a.index - b.index);
 
-  if (tasks !== null) {
-    tasks.sort((a, b) => a.index - b.index);
-
-    tasks.forEach((item) => {
-      todoList.innerHTML += `
-        <div class="todoFlex">
-          <div class="todoDiv">
-            <input type="checkbox" name="${item.id}" class="checkbox" ${item.completed ? 'checked' : ''} >
-            <input class="todoP" name="${item.id}" value="${item.description}" >
-          </div>
-          <i class="bi bi-three-dots-vertical dots"></i>
-        </div>
-      `;
-    });
-  }
+arrTodo.forEach((item) => {
+  todoList.innerHTML += `
+    <div class="todoFlex">
+      <div class="todoDiv">
+        <input type="checkbox" name="check" id="" ${item.completed ? 'checked' : ''} >
+        <p>${item.description}</p>
+      </div>
+      <i class="bi bi-three-dots-vertical"></i>
+    </div>
+  `;
 });
-
-// formInput + enter
-const formInput = document.querySelector('.formInput');
-const enter = document.getElementById('enter');
-
-formInput.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') {
-    e.preventDefault();
-  }
-});
-
-let indexTask;
-enter.addEventListener('click', () => {
-  if (localStorage.getItem('tasks') === null) {
-    indexTask = 1;
-  } else {
-    indexTask = JSON.parse(localStorage.getItem('tasks')).length + 1;
-  }
-
-  const todo1 = new Task(formInput.value, false, indexTask, Date.now().toString());
-  addtask(todo1); // add new task
-  formInput.value = '';
-});
-
-// clear all completed button
-const clearAll = document.querySelector('.clearAll');
-
-clearAll.addEventListener('click', () => {
-  const checkbox = document.querySelectorAll('.checkbox:nth-child(1)');
-
-  checkbox.forEach((item) => {
-    if (item.checked === true) {
-      removetask(item.name); // remove task
-      item.parentElement.parentElement.remove();
-    }
-  });
-});
-
-// edit task
-edittask();

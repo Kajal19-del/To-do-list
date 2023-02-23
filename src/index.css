@@ -8,12 +8,9 @@
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.hand {
+i,
+button {
   cursor: pointer;
-}
-
-.dots {
-  cursor: move;
 }
 
 /* ************** */
@@ -65,14 +62,8 @@ form {
   align-items: center;
 }
 
-.todoP {
-  border-style: none;
+.todoDiv > p {
   margin: 10px 0;
-}
-
-.touch {
-  text-decoration: line-through;
-  color: gray;
 }
 
 /* ************** */
