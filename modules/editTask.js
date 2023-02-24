@@ -17,6 +17,6 @@ module.exports = function edittask() {
       });
 
       localStorage.setItem('tasks', JSON.stringify(getedit));
-    } 
+    }
   });
 };
