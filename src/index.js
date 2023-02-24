@@ -3,6 +3,7 @@ import Task from '../modules/newTask.js';
 import addtask from '../modules/addTask.js';
 import removetask from '../modules/removeTask.js';
 import edittask from '../modules/editTask.js';
+import completed from '../modules/complete.js';
 
 const todoList = document.getElementById('todoList');
 
@@ -72,3 +73,6 @@ clearAll.addEventListener('click', () => {
 
 // edit task
 edittask();
+
+// completed
+completed();
