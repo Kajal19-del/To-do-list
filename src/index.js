@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
             <input type="checkbox" name="${item.id}" class="checkbox" ${item.completed ? 'checked' : ''} >
             <input class="todoP" name="${item.id}" value="${item.description}" >
           </div>
-          <i class="bi bi-three-dots-vertical dots"></i>
+          <i class="bi bi-trash3-fill dots" id="${item.id}" onclick="remove(this)"></i>
         </div>
       `;
     });
@@ -48,7 +48,14 @@ enter.addEventListener('click', () => {
   const todo1 = new Task(formInput.value, false, indexTask, Date.now().toString());
   addtask(todo1); // add new task
   formInput.value = '';
+  document.location.reload();
 });
+
+// delete btn working
+window.remove = (name) => {
+  removetask(name.id.toString());
+  name.parentElement.remove();
+};
 
 // clear all completed button
 const clearAll = document.querySelector('.clearAll');
