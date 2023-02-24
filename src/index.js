@@ -48,7 +48,6 @@ enter.addEventListener('click', () => {
   const todo1 = new Task(formInput.value, false, indexTask, Date.now().toString());
   addtask(todo1); // add new task
   formInput.value = '';
-  document.location.reload();
 });
 
 // delete btn working
