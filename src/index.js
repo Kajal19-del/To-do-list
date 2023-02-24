@@ -63,12 +63,10 @@ const clearAll = document.querySelector('.clearAll');
 clearAll.addEventListener('click', () => {
   const checkbox = document.querySelectorAll('.checkbox:nth-child(1)');
 
-  checkbox.forEach((item) => {
-    if (item.checked === true) {
-      removetask(item.name); // remove task
-      item.parentElement.parentElement.remove();
-    }
-  });
+  Array.from(checkbox).filter((item) => item.checked).forEach((item) => {
+    removetask(item.name); // remove task
+    item.parentElement.parentElement.remove();
+  })
 });
 
 // edit task
