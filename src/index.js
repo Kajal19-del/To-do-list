@@ -66,7 +66,7 @@ clearAll.addEventListener('click', () => {
   Array.from(checkbox).filter((item) => item.checked).forEach((item) => {
     removetask(item.name); // remove task
     item.parentElement.parentElement.remove();
-  })
+  });
 });
 
 // edit task
