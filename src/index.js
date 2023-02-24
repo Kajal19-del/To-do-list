@@ -3,6 +3,7 @@ import Task from '../modules/newTask.js';
 import addtask from '../modules/addTask.js';
 import removetask from '../modules/removeTask.js';
 import edittask from '../modules/editTask.js';
+import completed from '../modules/complete.js';
 
 const todoList = document.getElementById('todoList');
 
@@ -48,7 +49,6 @@ enter.addEventListener('click', () => {
   const todo1 = new Task(formInput.value, false, indexTask, Date.now().toString());
   addtask(todo1); // add new task
   formInput.value = '';
-  document.location.reload();
 });
 
 // delete btn working
@@ -63,13 +63,14 @@ const clearAll = document.querySelector('.clearAll');
 clearAll.addEventListener('click', () => {
   const checkbox = document.querySelectorAll('.checkbox:nth-child(1)');
 
-  checkbox.forEach((item) => {
-    if (item.checked === true) {
-      removetask(item.name); // remove task
-      item.parentElement.parentElement.remove();
-    }
+  Array.from(checkbox).filter((item) => item.checked).forEach((item) => {
+    removetask(item.name); // remove task
+    item.parentElement.parentElement.remove();
   });
 });
 
 // edit task
 edittask();
+
+// completed
+completed();
